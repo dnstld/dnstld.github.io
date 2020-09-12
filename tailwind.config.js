@@ -1,6 +1,13 @@
 module.exports = {
   purge: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.ts', './src/**/*.tsx'],
-  theme: {},
+  theme: {
+    extend: {
+      // colors: {
+      //   primary: 'var(--primary)',
+      //   secondary: 'var(--secondary)',
+      // }
+    }
+  },
   variants: {},
   plugins: [],
 }
