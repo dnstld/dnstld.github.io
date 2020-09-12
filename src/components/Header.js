@@ -1,13 +1,18 @@
 
 import React from 'react';
 import tw from 'twin.macro';
+import Icon from './Icon';
 
 import DarkToggle from './DarkToggle';
 
 const Header = ({ siteTitle }) => {
   return (
     <Wrapper>
-      <Title>{siteTitle}</Title>
+      <Title>
+        <Icon icon="github" /> 
+        <Icon icon="linkedin" /> 
+        {siteTitle}
+      </Title>
 
       <DarkToggle />
     </Wrapper>
