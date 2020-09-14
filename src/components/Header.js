@@ -8,23 +8,54 @@ import DarkToggle from './DarkToggle';
 const Header = ({ siteTitle }) => {
   return (
     <Wrapper>
-      <Title>
-        <Icon icon="github" /> 
-        <Icon icon="linkedin" /> 
-        {siteTitle}
-      </Title>
+      <Actions>
+        <Social>
+          <SocialLink
+            href="https://github.com/dnstld"
+            target="_blank"
+            rel="noopener norefferer"
+          >
+            <Icon icon="github" />
+          </SocialLink>
 
-      <DarkToggle />
+          <SocialLink
+            href="https://www.linkedin.com/in/denistoledo/"
+            target="_blank"
+            rel="noopener norefferer"
+          >
+            <Icon icon="linkedin" />
+          </SocialLink>
+        </Social>
+
+        <Tools>
+          <DarkToggle />
+        </Tools>
+      </Actions>
+      <div>
+        Menu
+      </div>
     </Wrapper>
   );
 };
 
 const Wrapper = tw.header`
-  flex justify-between px-4 py-2
+  flex flex-col w-screen
 `
 
-const Title = tw.h1`
-  text-xl uppercase antialiased
+const Actions = tw.div`
+  w-screen flex justify-between items-center bg-header
+`
+
+const Social = tw.div`
+  flex
+`
+
+const SocialLink = tw.a`
+  px-4 py-2
+`
+
+const Tools = tw.div`
+  px-4
 `
 
 export default Header;

@@ -14,7 +14,7 @@ const DarkToggle = () => {
 
   return (
     <Container>
-      <Label htmlFor='theme-toggle'>Dark theme</Label>
+      <Label htmlFor='theme-toggle'>Dark mode</Label>
 
       <Toggle
         id="theme-toggle"

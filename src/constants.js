@@ -3,9 +3,13 @@ export const COLORS = {
     light: 'hsl(240deg, 12%, 23%)',
     dark: 'hsl(0deg, 0%, 95%)',
   },
-  background: {
+  body: {
     light: 'hsl(0deg, 0%, 95%)',
     dark: 'hsl(240deg, 12%, 23%)',
+  },
+  header: {
+    light: 'hsl(0deg, 0%, 85%)',
+    dark: 'hsl(240deg, 15%, 20%)',
   },
 };
 

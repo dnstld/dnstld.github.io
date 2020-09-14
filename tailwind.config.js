@@ -2,10 +2,10 @@ module.exports = {
   purge: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.ts', './src/**/*.tsx'],
   theme: {
     extend: {
-      // colors: {
-      //   primary: 'var(--primary)',
-      //   secondary: 'var(--secondary)',
-      // }
+      colors: {
+        body: 'var(--color-body)',
+        header: 'var(--color-header)',
+      }
     }
   },
   variants: {},
