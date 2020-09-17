@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gatsby develop",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   "dependencies": {
     "babel-plugin-styled-components": "^1.11.1",
     "gatsby": "^2.24.53",
+    "gatsby-plugin-create-client-paths": "^2.3.11",
     "gatsby-plugin-postcss": "^2.3.11",
     "gatsby-plugin-styled-components": "^3.3.10",
     "prop-types": "^15.7.2",
