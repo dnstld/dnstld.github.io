@@ -1,15 +1,23 @@
 export const COLORS = {
   text: {
-    light: 'hsl(240deg, 12%, 23%)',
-    dark: 'hsl(0deg, 0%, 95%)',
+    light: '#33333A',
+    dark: '#f2f2f2',
   },
   body: {
-    light: 'hsl(0deg, 0%, 95%)',
-    dark: 'hsl(240deg, 12%, 23%)',
+    light: '#f2f2f2',
+    dark: '#33333A',
   },
-  header: {
-    light: 'hsl(0deg, 0%, 85%)',
-    dark: 'hsl(240deg, 15%, 20%)',
+  tools: {
+    light: '#D4D4D4',
+    dark: '#2C2C34',
+  },
+  'shadow-dark': {
+    light: '#bdbdbc',
+    dark: '#22222a',
+  },
+  'shadow-light': {
+    light: '#ffffff',
+    dark: '#3b3b43',
   },
 };
 

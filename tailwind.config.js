@@ -4,8 +4,15 @@ module.exports = {
     extend: {
       colors: {
         body: 'var(--color-body)',
-        header: 'var(--color-header)',
-      }
+        tools: 'var(--color-tools)',
+        shadowLight: 'var(--color-shadow-light)',
+        shadowDark: 'var(--color-shadow-dark)',
+      },
+      boxShadow: theme => ({
+        ...theme('colors'),
+        sm: `3px 3px 6px ${theme('colors.shadowDark')}, -3px -3px 6px ${theme('colors.shadowLight')}`,
+        default: `5px 5px 10px ${theme('colors.shadowDark')}, -5px -5px 10px ${theme('colors.shadowLight')}`,
+      }),
     }
   },
   variants: {},

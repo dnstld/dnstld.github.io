@@ -9,13 +9,13 @@ const Header = ({ siteTitle }) => {
   return (
     <Wrapper>
       <Actions>
-        <Social>
+        <div>
           <SocialLink
             href="https://github.com/dnstld"
             target="_blank"
             rel="noopener norefferer"
           >
-            <Icon icon="github" />
+            <Icon icon="github" size={16} />
           </SocialLink>
 
           <SocialLink
@@ -23,39 +23,31 @@ const Header = ({ siteTitle }) => {
             target="_blank"
             rel="noopener norefferer"
           >
-            <Icon icon="linkedin" />
+            <Icon icon="linkedin" size={16} />
           </SocialLink>
-        </Social>
+        </div>
 
         <Tools>
           <DarkToggle />
         </Tools>
       </Actions>
-      <div>
-        Menu
-      </div>
     </Wrapper>
   );
 };
 
 const Wrapper = tw.header`
-  flex flex-col w-screen
+  w-screen flex
 `
 
 const Actions = tw.div`
-  w-screen flex justify-between items-center bg-header
-`
-
-const Social = tw.div`
-  flex
+  w-full flex justify-between items-center bg-tools rounded shadow p-2 m-4 box-border
 `
 
 const SocialLink = tw.a`
-  px-4 py-2
+  w-8 h-8 inline-flex items-center justify-center shadow-sm rounded-full mr-4 bg-tools hover:bg-body
 `
 
 const Tools = tw.div`
-  px-4
 `
 
 export default Header;
