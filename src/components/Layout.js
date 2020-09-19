@@ -27,13 +27,17 @@ const Layout = ({ children }) => {
     <Container>
       <Header siteTitle={data.site.siteMetadata.title} />
 
-      <main>{children}</main>
+      <Main>{children}</Main>
     </Container>
   );
 };
 
 const Container = tw.div`
-  h-screen
+  h-screen grid grid-rows-layout
+`
+
+const Main = tw.main`
+  flex flex-wrap justify-center overflow-y-scroll
 `
 
 Layout.propTypes = {

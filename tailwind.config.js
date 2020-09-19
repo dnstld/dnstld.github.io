@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        text: 'var(--color-text)',
         body: 'var(--color-body)',
         tools: 'var(--color-tools)',
         shadowLight: 'var(--color-shadow-light)',
@@ -13,6 +14,9 @@ module.exports = {
         sm: `3px 3px 6px ${theme('colors.shadowDark')}, -3px -3px 6px ${theme('colors.shadowLight')}`,
         default: `5px 5px 10px ${theme('colors.shadowDark')}, -5px -5px 10px ${theme('colors.shadowLight')}`,
       }),
+      gridTemplateRows: {
+        layout: 'auto 1fr',
+      },
     }
   },
   variants: {},
