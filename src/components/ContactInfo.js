@@ -37,7 +37,7 @@ const ContactInfo = () => {
 };
 
 const Contacts = tw.div`
-  inline-flex items-center not-italic font-thin tracking-wide
+  flex items-center not-italic tracking-wide
 `
 
 const Actions = tw.div`
@@ -45,7 +45,7 @@ const Actions = tw.div`
 `
 
 const Link = tw.a`
-  w-16 h-16 flex items-center justify-center shadow rounded-full mr-4 text-text
+  w-16 h-16 flex items-center justify-center shadow rounded-full mr-4 text-text hover:bg-tools
 `
 
 export default ContactInfo;

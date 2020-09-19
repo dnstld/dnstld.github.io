@@ -37,7 +37,7 @@ const Container = tw.div`
 `
 
 const Main = tw.main`
-  flex flex-wrap justify-center overflow-y-scroll
+  flex flex-wrap justify-center overflow-y-scroll max-w-screen-xl m-auto md:items-center
 `
 
 Layout.propTypes = {
