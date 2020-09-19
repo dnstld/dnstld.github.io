@@ -1,6 +1,7 @@
 import React from 'react';
 import tw, { styled } from 'twin.macro';
-import AvatarImg from "../assets/images/avatar-denis-toledo.jpeg";
+import AvatarImg from '../assets/images/avatar-denis-toledo.jpeg';
+import ContactInfo from '../components/ContactInfo';
 
 const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
           <p>with a taste</p>
           <p>for design</p>
         </Article>
+        <ContactInfo />
       </Subject>
       <Info>2</Info>
     </Wrapper>
@@ -43,7 +45,7 @@ const Info = styled.section`
 `
 
 const Avatar = tw.div`
-  block w-20 h-20 bg-body rounded-full overflow-hidden border-solid border-4 border-body shadow
+  block w-24 h-24 bg-body rounded-full overflow-hidden border-solid border-4 border-body shadow
 `
 
 const Img = tw.img`
@@ -53,9 +55,8 @@ const Img = tw.img`
 const Title = styled.h1`
   ${tw`uppercase font-thin text-2xl tracking-wide relative pb-2`}
   &:after {
-    ${tw`absolute bottom-0 left-0 w-24 h-1 rounded-full shadow-sm`}
+    ${tw`absolute bottom-0 left-0 w-24 h-1 rounded-full shadow-sm bg-primary`}
     content: "";
-    background-color: palevioletred;
   }
 `
 

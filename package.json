@@ -20,6 +20,10 @@
   },
   "homepage": "https://github.com/dnstld/dnstld.github.io#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "babel-plugin-styled-components": "^1.11.1",
     "gatsby": "^2.24.53",
     "gatsby-plugin-create-client-paths": "^2.3.11",

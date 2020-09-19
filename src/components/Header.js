@@ -1,9 +1,14 @@
 
 import React from 'react';
 import tw from 'twin.macro';
-import Icon from './Icon';
 
 import DarkToggle from './DarkToggle';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faGithub,
+  faLinkedinIn
+} from '@fortawesome/free-brands-svg-icons';
 
 const Header = ({ siteTitle }) => {
   return (
@@ -15,7 +20,7 @@ const Header = ({ siteTitle }) => {
             target="_blank"
             rel="noopener norefferer"
           >
-            <Icon icon="github" size={16} />
+            <FontAwesomeIcon icon={faGithub} size="1x" />
           </SocialLink>
 
           <SocialLink
@@ -23,7 +28,7 @@ const Header = ({ siteTitle }) => {
             target="_blank"
             rel="noopener norefferer"
           >
-            <Icon icon="linkedin" size={16} />
+            <FontAwesomeIcon icon={faLinkedinIn} size="1x" />
           </SocialLink>
         </div>
 

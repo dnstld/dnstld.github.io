@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        primary: 'palevioletred',
         text: 'var(--color-text)',
         body: 'var(--color-body)',
         tools: 'var(--color-tools)',
