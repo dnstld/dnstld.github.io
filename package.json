@@ -1,46 +1,16 @@
 {
   "name": "dnstld.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "Frontend developer with a taste for design",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "dev": "gatsby develop",
-    "deploy": "npm test && gatsby build && gh-pages -d public -b master",
-    "release": "release-it"
-  },
-  "release-it": {
-    "plugins": {
-      "release-it-lerna-changelog": {
-        "infile": "CHANGELOG.md",
-        "launchEditor": true
-      }
-    },
-    "git": {
-      "tagName": "v${version}",
-      "commitMessage": "Release v${version}",
-      "pushArgs": "--follow-tags --no-verify"
-    },
-    "github": {
-      "release": true,
-      "releaseName": "v${version}"
-    },
-    "npm": {
-      "publish": false
-    }
-  },
-  "changelog": {
-    "labels": {
-      "breaking": ":boom: Breaking Change",
-      "enhancement": ":rocket: Enhancement",
-      "bug": ":bug: Bug Fix",
-      "documentation": ":memo: Documentation",
-      "internal": ":house: Internal"
-    }
+    "deploy": "npm test && gatsby build && gh-pages -d public -b master"
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm test"
+      "pre-push": "npm run test"
     }
   },
   "repository": {
@@ -80,7 +50,6 @@
     "jest": "^26.4.2",
     "prettier": "^1.19.1",
     "react-test-renderer": "^16.13.1",
-    "release-it-lerna-changelog": "^2.4.0",
     "tailwindcss": "^1.8.8",
     "twin.macro": "^1.8.1"
   }
