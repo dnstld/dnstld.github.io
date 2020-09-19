@@ -22,13 +22,13 @@ const ContactInfo = () => {
         +55 11 982013667
       </Contacts>
       <Actions>
-        <Link href="mailto:contato@denistoledo.com.br" target="blank" className="bg-blue-500">
+        <Link href="mailto:contato@denistoledo.com.br" target="blank" className="bg-body">
           <FontAwesomeIcon icon={faEnvelope} className="text-2xl" />
         </Link>
-        <Link href="tel:5511982013667" className="bg-green-600">
+        <Link href="tel:5511982013667" className="bg-body">
           <FontAwesomeIcon icon={faMobileAlt} className="text-2xl" />
         </Link>
-        <Link href="https://wa.me/5511982013667" target="blank" className="bg-green-400">
+        <Link href="https://wa.me/5511982013667" target="blank" className="bg-body">
           <FontAwesomeIcon icon={faWhatsapp} className="text-3xl" />
         </Link>
       </Actions>
@@ -45,7 +45,7 @@ const Actions = tw.div`
 `
 
 const Link = tw.a`
-  w-16 h-16 flex items-center justify-center shadow rounded-full mr-4
+  w-16 h-16 flex items-center justify-center shadow rounded-full mr-4 text-text
 `
 
 export default ContactInfo;
