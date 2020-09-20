@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -34,11 +27,11 @@ const Layout = ({ children }) => {
 
 const Container = tw.div`
   h-screen grid grid-rows-layout
-`
+`;
 
 const Main = tw.main`
   flex flex-wrap justify-center overflow-y-scroll max-w-screen-xl m-auto md:items-center
-`
+`;
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

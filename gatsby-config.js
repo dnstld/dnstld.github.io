@@ -1,29 +1,41 @@
 module.exports = {
   siteMetadata: {
-    title: `Denis Toledo`,
-    description: `Frontend developer with a taste for design`,
-    author: `@dnstld`,
+    title: 'Denis Toledo',
+    description: 'Frontend developer with a taste for design',
+    author: '@dnstld',
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-create-client-paths`,
-      options: { prefixes: [`/app/*`] },
+      resolve: 'gatsby-plugin-create-client-paths',
+      options: { prefixes: ['/app/*'] },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `pages`,
+        name: 'pages',
         path: `${__dirname}/src/pages/`,
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/assets/images`,
       },
     },
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-postcss`,
+    {
+      resolve: 'gatsby-plugin-eslint',
+      options: {
+        test: /\.js$|\.jsx$/,
+        exclude: /(node_modules|.cache|public)/,
+        stages: ['develop'],
+        options: {
+          emitWarning: true,
+          failOnError: false,
+        },
+      },
+    },
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-postcss',
   ],
-}
+};

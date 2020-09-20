@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from 'react';
 
 import {
@@ -8,6 +9,7 @@ import {
 
 export const ThemeContext = React.createContext();
 
+// eslint-disable-next-line react/prop-types
 export const ThemeProvider = ({ children }) => {
   const [colorMode, rawSetColorMode] = React.useState(undefined);
 
@@ -18,7 +20,7 @@ export const ThemeProvider = ({ children }) => {
     // doing a lot of the work in gatsby-ssr. That way it can happen before
     // the React component tree mounts.
     const initialColorValue = root.style.getPropertyValue(
-      INITIAL_COLOR_MODE_CSS_PROP
+      INITIAL_COLOR_MODE_CSS_PROP,
     );
 
     rawSetColorMode(initialColorValue);

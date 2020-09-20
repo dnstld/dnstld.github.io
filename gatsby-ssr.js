@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from 'react';
 import Terser from 'terser';
 
@@ -28,7 +29,7 @@ function setColorsByTheme() {
     colorMode = prefersDarkFromMQ ? 'dark' : 'light';
   }
 
-  let root = document.documentElement;
+  const root = document.documentElement;
 
   root.style.setProperty(colorModeCssProp, colorMode);
 
@@ -69,10 +70,8 @@ const FallbackStyles = () => {
   */
 
   const cssVariableString = Object.entries(COLORS).reduce(
-    (acc, [name, colorByTheme]) => {
-      return `${acc}\n--color-${name}: ${colorByTheme.light};`;
-    },
-    ''
+    (acc, [name, colorByTheme]) => `${acc}\n--color-${name}: ${colorByTheme.light};`,
+    '',
   );
 
   const wrappedInSelector = `html { ${cssVariableString} }`;
@@ -85,6 +84,4 @@ export const onRenderBody = ({ setPreBodyComponents, setHeadComponents }) => {
   setPreBodyComponents(<MagicScriptTag />);
 };
 
-export const wrapPageElement = ({ element }) => {
-  return <App>{element}</App>;
-};
+export const wrapPageElement = ({ element }) => <App>{element}</App>;
