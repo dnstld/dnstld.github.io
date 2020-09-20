@@ -1,6 +1,7 @@
 import React from 'react';
 import tw from 'twin.macro';
 import Toggle from 'react-toggle';
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
 
 import { ThemeContext } from './ThemeContext';
 
@@ -20,6 +21,11 @@ const DarkToggle = () => {
         checked={colorMode === 'dark'}
         icons={false}
         onChange={(ev) => {
+          trackCustomEvent({
+            category: 'Theme Color',
+            action: 'Change',
+            label: 'Theme  Color Analyzes',
+          });
           setColorMode(ev.target.checked ? 'dark' : 'light');
         }}
       />
