@@ -8,13 +8,12 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 import ContactInfo from '../components/ContactInfo';
-import AvatarImg from '../assets/images/avatar-denis-toledo.jpeg';
 
 const HomePage = () => (
   <Wrapper>
     <Subject>
       <Avatar>
-        <Img src={AvatarImg} alt="Denis Toledo" />
+        <Img src="avatar-denis-toledo.jpeg" alt="Denis Toledo" />
       </Avatar>
 
       <header>
