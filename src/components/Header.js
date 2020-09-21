@@ -17,7 +17,7 @@ const Header = () => (
           target="_blank"
           rel="noopener norefferer"
         >
-          <FontAwesomeIcon icon={faGithub} size="1x" />
+          <FontAwesomeIcon icon={faGithub} size="lg" />
         </SocialLink>
 
         <SocialLink
@@ -25,7 +25,7 @@ const Header = () => (
           target="_blank"
           rel="noopener norefferer"
         >
-          <FontAwesomeIcon icon={faLinkedinIn} size="1x" />
+          <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
         </SocialLink>
       </div>
 
@@ -45,7 +45,7 @@ const Actions = tw.div`
 `;
 
 const SocialLink = tw.a`
-  w-8 h-8 inline-flex items-center justify-center shadow-sm rounded-full mr-4 bg-tools hover:bg-body
+  w-12 h-12 inline-flex items-center justify-center shadow-sm rounded-full mr-4 bg-tools hover:bg-body
 `;
 
 const Tools = tw.div`

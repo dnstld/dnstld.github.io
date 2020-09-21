@@ -1,4 +1,7 @@
 var plugins = [{
+      plugin: require('/Users/denistoledo/Desktop/_webapp/dnstld.github.io/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      options: {"plugins":[],"trackingId":"UA-178495563-1"},
+    },{
       plugin: require('/Users/denistoledo/Desktop/_webapp/dnstld.github.io/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
     },{

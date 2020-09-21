@@ -32,7 +32,7 @@ const HomePage = () => (
     <Info>
       <FontAwesomeIcon icon={faQuoteLeft} size="3x" className="text-primary" />
       <p>
-        I am a Front-end Developer with deep understanding of HTML5 and CSS3,
+        I am a Frontend Developer with deep understanding of HTML5 and CSS3,
         as well as CSS preprocessors, architectures and methodologies.
       </p>
       <p>
@@ -46,7 +46,7 @@ const HomePage = () => (
 );
 
 const Wrapper = styled.div`
-  ${tw`grid gap-y-12 w-full p-4 relative md:gap-y-0 md:gap-x-24 md:items-center`}
+  ${tw`grid gap-y-12 w-full p-8 relative md:gap-y-0 md:gap-x-24 md:items-center`}
   grid-template-areas: "subject"
                        "info";
   grid-auto-rows: max-content;
@@ -71,7 +71,7 @@ const Img = tw.img`
 `;
 
 const Title = styled.h1`
-  ${tw`uppercase font-thin text-2xl tracking-wide relative pb-2`}
+  ${tw`uppercase font-light text-2xl tracking-wide relative pb-2`}
   &:after {
     ${tw`absolute bottom-0 left-0 w-24 h-1 rounded-full shadow-sm bg-primary`}
     content: "";
@@ -79,11 +79,11 @@ const Title = styled.h1`
 `;
 
 const Description = tw.article`
-  uppercase font-thin text-4xl tracking-wider
+  uppercase font-light text-4xl tracking-wider
 `;
 
 const Info = styled.article`
-  ${tw`grid grid-cols-1 gap-y-6 leading-relaxed text-lg`}
+  ${tw`grid grid-cols-1 gap-y-6 leading-relaxed text-xl`}
   grid-area: info;
   grid-auto-rows: max-content;
 `;
