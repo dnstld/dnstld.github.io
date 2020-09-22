@@ -32,8 +32,8 @@ const HomePage = () => (
     <Info>
       <FontAwesomeIcon icon={faQuoteLeft} size="3x" className="text-primary" />
       <p>
-        I am a Frontend Developer with deep understanding of HTML5 and CSS3,
-        as well as CSS preprocessors, architectures and methodologies.
+        I am a frontend developer with hands-on experience with HTML5, CSS3, and
+        modern JavaScript, including 4+ years of working with Ember.js.
       </p>
       <p>
         An enthusiast user experience and user interface designer with strong
