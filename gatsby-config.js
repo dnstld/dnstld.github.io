@@ -4,7 +4,6 @@ module.exports = {
     description: 'Frontend developer with a taste for design',
     url: 'https://denistoledo.dev',
     image: '/avatar-denis-toledo.jpeg',
-    twitterUsername: '@dnstld',
     author: '@dnstld',
   },
   plugins: [

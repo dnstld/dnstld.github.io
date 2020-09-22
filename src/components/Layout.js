@@ -1,29 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
 import tw from 'twin.macro';
 
 import Header from './Header';
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+const Layout = ({ children }) => (
+  <Container>
+    <Header />
 
-  return (
-    <Container>
-      <Header siteTitle={data.site.siteMetadata.title} />
-
-      <Main>{children}</Main>
-    </Container>
-  );
-};
+    <Main>{children}</Main>
+  </Container>
+);
 
 const Container = tw.div`
   h-screen grid grid-rows-layout
